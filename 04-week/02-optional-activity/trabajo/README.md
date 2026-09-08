@@ -194,3 +194,29 @@ El ciclo de vida propuesto para este proyecto es:
 │ Mejorar        │
 │ inventario     │
 └───────────────┘
+---
+
+## 6. Problem & data
+
+The Taller de Motos RPM needs to analyze its business data to improve services and inventory management.
+
+The data includes sales records, customer information, motorcycle information, service orders, inventory records, photographs, PDF invoices, and customer comments.
+
+Some of these data are structured, while others are semi-structured or unstructured.
+
+Descriptive analytics can be used to understand the services and spare parts with the highest demand.
+
+Predictive analytics can be used to estimate future demand for spare parts and services.
+
+The results can help the workshop make better decisions about inventory, purchasing, and customer service.
+---
+
+## 7. Conclusión
+
+El análisis de datos aplicado al Taller de Motos RPM permite transformar los registros generados diariamente en información útil para la toma de decisiones.
+
+Mediante la analítica descriptiva se puede conocer el comportamiento histórico del negocio, mientras que la analítica predictiva permite estimar posibles comportamientos futuros.
+
+La información obtenida puede utilizarse para mejorar la gestión del inventario, planificar las compras de repuestos, identificar los servicios con mayor demanda y mejorar la atención de los clientes.
+
+Este proyecto representa una aplicación práctica de la Ciencia de Datos en un proceso real de negocio.
