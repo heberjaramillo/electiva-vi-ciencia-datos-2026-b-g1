@@ -1,0 +1,31 @@
+/*
+SEMANA 14 - CIENCIA DE DATOS
+Taller RPM'S
+Estudiante: Heber Armando Jaramillo Sanchez
+Programa: Ingeniería Mecatrónica
+
+Tabla requerida en Power BI: OrdenesRPM
+Base: 240 órdenes simuladas. No son registros reales de clientes.
+*/
+
+/*
+MEDIDA 1: cantidad de órdenes entregadas.
+Cuenta las órdenes cuyo estado es Entregada.
+*/
+Ordenes Entregadas =
+CALCULATE(
+    COUNTROWS(OrdenesRPM),
+    OrdenesRPM[estado_orden] = "Entregada"
+)
+
+/*
+MEDIDA 2: porcentaje de órdenes entregadas.
+Divide las órdenes entregadas entre todas las órdenes registradas.
+DIVIDE evita errores si el total es cero.
+*/
+Porcentaje Ordenes Entregadas =
+DIVIDE(
+    [Ordenes Entregadas],
+    COUNTROWS(OrdenesRPM),
+    0
+)
