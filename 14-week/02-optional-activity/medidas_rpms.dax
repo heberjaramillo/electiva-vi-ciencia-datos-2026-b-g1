@@ -1,0 +1,14 @@
+-- Antes de usar: importar el CSV como tabla OrdenesRPM.
+-- Crear una tabla calendario llamada Calendario y relacionar
+-- Calendario[Fecha] (1) con OrdenesRPM[fecha_ingreso] (*).
+
+Total Ordenes =
+COUNTROWS(OrdenesRPM)
+
+Media Movil 3 Meses =
+VAR FechaMax = MAX(Calendario[Fecha])
+RETURN
+AVERAGEX(
+    DATESINPERIOD(Calendario[Fecha], FechaMax, -3, MONTH),
+    CALCULATE([Total Ordenes])
+)
